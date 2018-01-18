@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/prahaladbelavadi/angular-routing-using-ui-router#readme",
   "dependencies": {
+    "angular": "^1.6.8",
     "express": "^4.16.2"
   }
 }

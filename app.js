@@ -51,8 +51,13 @@ routerApp.config(function($stateProvider, $urlRouterProvider) {
                 }
             }
 
-        });
+        })
 
+    // Firemen state
+        .state('home', {
+            url: '/home',
+            templateUrl: 'partial-home.html'
+        });
 
 
 });
