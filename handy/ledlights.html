@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<div style="text-align:right">
+<canvas id="myCanvasA">
+Your browser does not support the HTML5 canvas tag.</canvas>
+</div>
+
+<div style="text-align:left">
+<canvas id="myCanvasB">
+Your browser does not support the HTML5 canvas tag.</canvas>
+</div>
+
+<div style="text-align:center">
+<canvas id="myCanvasC">
+Your browser does not support the HTML5 canvas tag.</canvas>
+</div>
+
+<script>
+
+var a=document.getElementById("myCanvasA");
+var ctx=a.getContext("2d");
+ctx.beginPath();
+ctx.arc(100,75,50,0,2*Math.PI);
+ctx.stroke();
+ctx.fillStyle = "red";
+ctx.fill();
+
+var b=document.getElementById("myCanvasB");
+var ctx=b.getContext("2d");
+ctx.beginPath();
+ctx.arc(100,75,50,0,2*Math.PI);
+ctx.stroke();
+ctx.fillStyle = "yellow";
+ctx.fill();
+
+var c=document.getElementById("myCanvasC");
+var ctx=c.getContext("2d");
+ctx.beginPath();
+ctx.arc(100,75,50,0,2*Math.PI);
+ctx.stroke();
+ctx.fillStyle = "green";
+ctx.fill();
+
+
+
+
+</script> 
+
+</body>
+</html>
