@@ -52,11 +52,16 @@ routerApp.config(function($stateProvider, $urlRouterProvider) {
             }
 
         })
+    // Survivor state
+        .state('Survivor', {
+            url: '/Survivor',
+            templateUrl: 'partial-survivor.html'
+        })
 
-    // Firemen state
-        .state('home', {
-            url: '/home',
-            templateUrl: 'partial-home.html'
+    // Fireman state
+        .state('Fireman', {
+            url: '/Fireman',
+            templateUrl: 'partial-fireman.html'
         });
 
 

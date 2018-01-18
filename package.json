@@ -1,5 +1,5 @@
 {
-  "name": "angular-routing-using-ui-router",
+  "name": "denso-fire-alarm",
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
@@ -9,16 +9,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/prahaladbelavadi/angular-routing-using-ui-router.git"
+    "url": "git+https://github.com/prahaladbelavadi/denso-fire-alarm.git"
   },
   "author": "Prahalad Belavadi",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/prahaladbelavadi/angular-routing-using-ui-router/issues"
+    "url": "https://github.com/prahaladbelavadi/denso-fire-alarm/issues"
   },
-  "homepage": "https://github.com/prahaladbelavadi/angular-routing-using-ui-router#readme",
+  "homepage": "https://github.com/prahaladbelavadi/denso-fire-alarm#readme",
   "dependencies": {
     "angular": "^1.6.8",
+    "angular-chart.js": "^1.1.1",
     "express": "^4.16.2"
   }
 }
