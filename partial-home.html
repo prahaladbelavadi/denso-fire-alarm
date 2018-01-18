@@ -1,18 +1,29 @@
 <!-- partial-home.html -->
 
 <div class="jumbotron text-center">
-    <h1>The Homey Page</h1>
-    <p>This page demonstrates <span class="text-danger">nested</span> views.</p>
+  <h1>Heat Distribution</h1>
+  <p>This page demonstrates <span class="text-danger">nested</span> views.</p>
+  <div class="well well-sm">
+    <canvas id="base" class="chart-base" chart-type="type" chart-data="data" chart-labels="labels">
+</canvas>
+  </div>
+
 </div>
 
 <!-- partial-home.html -->
 
 <div class="jumbotron text-center">
-    <h1>The Homey Page</h1>
-    <p>This page demonstrates <span class="text-danger">nested</span> views.</p>
+  <h1>The Fire Exit</h1>
+  <p>This page demonstrates <span class="text-danger">nested</span> views.</p>
+  <!-- <img src="https://i.ebayimg.com/00/s/NDg1WDY4Mg==/z/B88AAOSwhqhaH~hY/$_20.JPG" alt=""> -->
 
-    <a ui-sref=".list" class="btn btn-primary">List</a>
-    <a ui-sref=".paragraph" class="btn btn-danger">Paragraph</a>
+  <img src="https://wcs.smartdraw.com/evacuation-plan/img/emergency-plan-example.png" alt="">
+
+  <hr>
+  <a ui-sref=".list" class="btn btn-danger">List Exits</a>
+  <a ui-sref=".paragraph" class="btn btn-primary"> Are we on Fire ?</a>
+  <hr>
+  <div class="well well-sm">
+    <div ui-view></div>
+  </div>
 </div>
-
-<div ui-view></div>

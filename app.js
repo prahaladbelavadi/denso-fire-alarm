@@ -1,6 +1,5 @@
 // app.js
-var routerApp = angular.module('routerApp', ['ui.router']);
-
+var routerApp = angular.module('routerApp', ['ui.router','chart.js']);
 
 routerApp.config(function($stateProvider, $urlRouterProvider) {
 
@@ -13,22 +12,22 @@ routerApp.config(function($stateProvider, $urlRouterProvider) {
         .state('home', {
             url: '/home',
             templateUrl: 'partial-home.html'
-        })
+        }
 
-//
+
         // nested list with custom controller
         .state('home.list', {
             url: '/list',
             templateUrl: 'partial-home-list.html',
         controller: function($scope) {
-            $scope.dogs = ['Bernese', 'Husky', 'Goldendoodle'];
+            $scope.dogs = ['Go Left to the Fire Exit near the Pharmacy.', 'Go Straight to the Clearing safe are straight down the hall.', 'Take the stairwell to your right.'];
             }
         })
 
         // nested list with just some random string data
         .state('home.paragraph', {
             url: '/paragraph',
-            template: 'I could sure use a drink right now.'
+            template: 'No, there is no need to panic at the moment.'
         })
 //
 
@@ -62,7 +61,7 @@ routerApp.config(function($stateProvider, $urlRouterProvider) {
         .state('Fireman', {
             url: '/Fireman',
             templateUrl: 'partial-fireman.html'
-        });
+        })
 
 
 });
@@ -87,4 +86,5 @@ routerApp.controller('scotchController', function($scope) {
         }
     ];
 
+});
 });
